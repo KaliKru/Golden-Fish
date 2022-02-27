@@ -10,7 +10,7 @@ function Unit(props) {
 
     return (
         <div>
-            <div>
+            <div className={"styleUnit"}>
                 <p>{selectUnit}</p>
                 <select value={selectUnit} onChange={handleSelect}>
                     <option value="">Select unit</option>
