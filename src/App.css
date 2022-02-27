@@ -1,3 +1,38 @@
+
+.styleRatio {
+  width: 100vw;
+  height: 50vh;
+  background-color: deeppink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.inputRatio {
+  background-color: black;
+  color: goldenrod;
+  padding: 5px;
+  margin: 3px;
+  text-align: center;
+  display: flex;
+}
+
+.effectRatio {
+  display: flex;
+}
+
+h4 {
+  padding: 5px;
+  margin: 3px;
+  text-align: center;
+  color: darkorange;
+}
+
+
+
+/*
+
 .App {
   text-align: center;
 }
@@ -36,3 +71,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+ */

@@ -6,12 +6,16 @@ function RatioCounter(props) {
 
     return (
         <div>
-            <form>
-                <input type={"text"} value={x} onChange={event => setX(event.target.value)}/>
-                <input type={"text"} value={y} onChange={event => setY(event.target.value)}/>
-            </form>
-            <h4>{isNaN(x)  ? "Golden Fish understands only numbers ;)" : +x * 1.6}</h4>
-            <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : +y / 1.6}</h4>
+            <div className={"styleRatio"}>
+                <form>
+                    <input className={"inputRatio"} type={"text"} value={x} onChange={event => setX(event.target.value)}/>
+                    <input className={"inputRatio"} type={"text"} value={y} onChange={event => setY(event.target.value)}/>
+                </form>
+                <div className={"effectRatio"}>
+                    <h4>{isNaN(x)  ? "Golden Fish understands only numbers ;)" : "longer segment: " +x * 1.6}</h4>
+                    <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : "shorter segment: " +y / 1.6}</h4>
+                </div>
+            </div>
         </div>
     );
 }
