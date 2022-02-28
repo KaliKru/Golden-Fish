@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
-function RatioCounter(props) {
+function RatioCounter() {
     const [x, setX] = useState("");
     const [y, setY] = useState("");
-    //const [size, setSize] = useState("x,y");
+    const [sizeX, setSizeX] = useState("100px");
+    const [sizeY, setSizeY] = useState("100px");
 
     const handleX = (event) => {
         setX(event.target.value);
@@ -12,18 +13,25 @@ function RatioCounter(props) {
     const handleY = (event) => {
         setY(event.target.value);
     }
-    /*
-        const handleSize = (event) => {
-            setSize(event.target.value);
-        }
-        useEffect(() => {
-            document.element.height = size + '';
-        }, [size]);
-        const addSize = () => {
-            setSize(prev => prev + x);
-        }
 
-     */
+    useEffect(() => {
+        console.log(resultX);
+        document.getElementById(sizeY).width = `${setSizeX}`;
+    }, [x]);
+
+
+
+    const resultX = () => {
+        setSizeX(prev => ((prev - 100) + (+x * 1.6)));
+    }
+//zeruję sizeX, a pierwotny wymiar 100px wynika z tego że chcę pokazać użytkownikowi od początku jakiś kwadrat.
+// //Po wyzerowaniu równanie wg wzoru złotego podziału
+
+    const resultY = () => {
+        setSizeY( prev => ((prev - 100) + (+y / 1.6)));
+    }
+
+
 
 
     return (
@@ -36,6 +44,7 @@ function RatioCounter(props) {
                     <h4>{isNaN(x)  ? "Golden Fish understands only numbers ;)" : "longer segment: " +x * 1.6}</h4>
                 </div>
 
+
                 <form>
                     <input className={"inputRatio"} type={"text"} value={y} onChange={handleY}/>
                 </form>
@@ -43,14 +52,24 @@ function RatioCounter(props) {
                     <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : "shorter segment: " +y / 1.6}</h4>
                 </div>
 
+
             </div>
+
+            <div id={sizeY} onChange={resultX} style={{
+                width: +x * 1.6,
+                height: sizeY,
+                backgroundColor: "black",
+                color: "white",
+                textAlign: "center",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"}}>width: {+x * 1.6} height:{+y / 1.6}</div>
+
+
+
         </div>
     );
 }
 
-/*
-
-//<div style={{backgroundColor: "red", width: "10px", height: "10px"}} onChange={handleSize} {addSize(width: `$x`, height: `$y`)}>display size</div>
- */
 
 export default RatioCounter;
