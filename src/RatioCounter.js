@@ -39,14 +39,17 @@ function RatioCounter() {
             <div className={"styleRatio"}>
                 <form>
                     <input className={"inputRatio"} type={"text"} value={x} onChange={handleX}/>
+                    {y ? "wynik: " +y / 1.6 : ""}
                 </form>
                 <div className={"effectRatio"}>
-                    <h4>{isNaN(x)  ? "Golden Fish understands only numbers ;)" : "longer segment: " +x * 1.6}</h4>
+                    <h4>{isNaN(x)  ? "Golden Fish understands only numbers ;)" : "longer segment: " +x * 1.6}
+                       </h4>
                 </div>
 
 
                 <form>
                     <input className={"inputRatio"} type={"text"} value={y} onChange={handleY}/>
+                    {x ? "wynik: " +x * 1.6 : ""}
                 </form>
                 <div className={"effectRatio"}>
                     <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : "shorter segment: " +y / 1.6}</h4>
@@ -56,7 +59,7 @@ function RatioCounter() {
             </div>
 
             <div id={sizeY} onChange={resultX} style={{
-                width: +x * 1.6,
+                width: `${x * 1.6}px`,
                 height: sizeY,
                 backgroundColor: "black",
                 color: "white",
