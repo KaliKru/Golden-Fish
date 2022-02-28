@@ -19,10 +19,14 @@ function RatioCounter() {
         document.getElementById(sizeY).width = `${setSizeX}`;
     }, [x]);
 
-
-
+/*
     const resultX = () => {
         setSizeX(prev => ((prev - 100) + (+x * 1.6)));
+    }
+
+ */
+    const resultX = () => {
+        setSizeX(() => +x * 1.6);
     }
 //zeruję sizeX, a pierwotny wymiar 100px wynika z tego że chcę pokazać użytkownikowi od początku jakiś kwadrat.
 // //Po wyzerowaniu równanie wg wzoru złotego podziału
@@ -38,41 +42,64 @@ function RatioCounter() {
         <div>
             <div className={"styleRatio"}>
                 <form>
-                    <input className={"inputRatio"} type={"text"} value={x} onChange={handleX}/>
-                    {y ? "wynik: " +y / 1.6 : ""}
+                    <input className={"inputRatio"} type={"text"} value={x} placeholder="Type shorter value..." onChange={handleX}/>
+                    {y ? "shorter: " +y / 1.6 : ""}
                 </form>
+
                 <div className={"effectRatio"}>
-                    <h4>{isNaN(x)  ? "Golden Fish understands only numbers ;)" : "longer segment: " +x * 1.6}
+                    <h4>{isNaN(x) ? "Golden Fish understands only numbers ;)" : ""}
                        </h4>
                 </div>
 
 
+
+
                 <form>
-                    <input className={"inputRatio"} type={"text"} value={y} onChange={handleY}/>
-                    {x ? "wynik: " +x * 1.6 : ""}
+                    <input className={"inputRatio2"} type={"text"} value={y} placeholder="Type longer value..." onChange={handleY}/>
+                    {x ? "longer: " +x * 1.6 : ""}
                 </form>
-                <div className={"effectRatio"}>
-                    <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : "shorter segment: " +y / 1.6}</h4>
+                <div className={"effectRatio2"}>
+                    <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : ""}</h4>
                 </div>
 
 
             </div>
 
-            <div id={sizeY} onChange={resultX} style={{
-                width: `${x * 1.6}px`,
-                height: sizeY,
-                backgroundColor: "black",
-                color: "white",
-                textAlign: "center",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center"}}>width: {+x * 1.6} height:{+y / 1.6}</div>
 
 
+
+
+            <div className={"resultBox"}>
+                <div id={sizeY} onChange={resultX} style={{
+                    width: +x ? +x * 1.6 : sizeX,
+                    height: +y ? +y / 1.6 : sizeY,
+                    backgroundColor: "black",
+                    borderRadius: "3px",
+                    color: "white",
+                    textAlign: "center",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"}}>longer: {+x * 1.6}px shorter:{+x}px</div>
+            </div>
 
         </div>
     );
 }
 
+
+/*
+  // z poprzedniej wersji warunku
+  <div className={"effectRatio"}>
+                    <h4>{isNaN(x)  ? "Golden Fish understands only numbers ;)" : "longer segment: " +x * 1.6}
+                       </h4>
+                </div>
+
+
+
+                <div className={"effectRatio2"}>
+                    <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : "shorter segment: " +y / 1.6}</h4>
+                </div>
+
+ */
 
 export default RatioCounter;

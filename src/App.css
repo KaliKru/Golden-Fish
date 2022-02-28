@@ -1,6 +1,6 @@
 
 
-.styleRatio {
+.styleRatio, .styleRatio2 {
   width: 100vw;
   height: 50vh;
   background-color: lightpink;
@@ -10,7 +10,7 @@
 }
 
 
-.inputRatio {
+.inputRatio, .inputRatio2 {
   border-radius: 5px;
   border: none;
   background-color: hotpink;
