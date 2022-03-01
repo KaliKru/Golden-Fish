@@ -2,7 +2,7 @@
 
 .styleRatio, .styleRatio2 {
   width: 100vw;
-  height: 50vh;
+  height: 20vh;
   background-color: lightpink;
   display: flex;
   align-items: center;

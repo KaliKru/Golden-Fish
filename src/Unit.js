@@ -11,6 +11,7 @@ function Unit(props) {
     return (
         <div>
             <div className={"styleUnit"}>
+                <div>Golden Fish knows the ratio!</div>
                 <p>{selectUnit}</p>
                 <select value={selectUnit} onChange={handleSelect}>
                     <option value="">Select unit</option>
