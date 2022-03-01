@@ -5,6 +5,8 @@ import './resultBox.css';
 import React from "react";
 import Unit from "./Unit"
 import RatioCounter from "./RatioCounter";
+import Pallet from "./Pallet";
+import AddPallet from "./AddPallet";
 
 
 
@@ -13,6 +15,8 @@ const App = () => {
       <>
         <Unit/>
         <RatioCounter/>
+          <Pallet/>
+          <AddPallet/>
       </>
   )
 }
