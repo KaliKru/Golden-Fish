@@ -42,7 +42,17 @@ function RatioCounter() {
         setSizeY( () => +y / 1.6);
     }
 
-
+   const funCount = () => {
+        if (x >= 1) {
+            return (
+                <div id={sizeY} style={"width: `${x}`" && "height: `${x}` * 1.6"}/>
+            )
+        } else if (y >= 1) {
+            return (
+                <div id={sizeY} style={"width: `${y}`/ 1.6" && "height: `${y}`"}/>
+            )
+        }
+    }
 
 
 
@@ -51,32 +61,26 @@ function RatioCounter() {
             <div className={"styleRatio"}>
                 <form>
                     <input className={"inputRatio"} type={"text"} value={x} placeholder="type shorter value..." onChange={handleX}/>
+                    <div className={"effectRatio"}>
+                        <h4>{isNaN(x) ? "Golden Fish understands only numbers ;)" : ""}
+                        </h4>
+                    </div>
 
                 </form>
-
-                <div className={"effectRatio"}>
-                    <h4>{isNaN(x) ? "Golden Fish understands only numbers ;)" : ""}
-                       </h4>
-                </div>
-
-
-
 
                 <form>
                     <input className={"inputRatio2"} type={"text"} value={y} placeholder="or type longer value..." onChange={handleY}/>
+                    <div className={"effectRatio2"}>
+                        <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : ""}</h4>
+                    </div>
 
                 </form>
-                <div className={"effectRatio2"}>
-                    <h4>{isNaN(y)  ? "Golden Fish understands only numbers ;)" : ""}</h4>
-                </div>
-
 
             </div>
 
 
-
             <div className={"resultBox"}>
-                <div id={sizeY} onChange={resultX} style={{
+                <div id={sizeY} onChange={funCount} style={{
                     width: +x ? +x * 1.6 : sizeX,
                     height: +y ? +y / 1.6 : sizeY,
                     backgroundColor: "darkslateblue",
@@ -85,7 +89,8 @@ function RatioCounter() {
                     textAlign: "center",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center"}}>longer: {+x * 1.6}px shorter:{+x}px</div>
+                    justifyContent: "center"}}>longer: {+x * 1.6}px shorter:{+x}px
+                    </div>
             </div>
 
 

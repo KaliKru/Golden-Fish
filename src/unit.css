@@ -3,12 +3,12 @@
     display: block;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 30vh;
     width: 100vw;
     background-color: goldenrod;
     text-align: center;
     color: darkslategrey;
-    padding-top: 10px;
+    padding: 10px;
 
 }
 

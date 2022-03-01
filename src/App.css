@@ -3,7 +3,7 @@
 .styleRatio, .styleRatio2 {
   width: 100vw;
   height: 20vh;
-  background-color: lightpink;
+  background-color: goldenrod;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@
 .inputRatio, .inputRatio2 {
   border-radius: 5px;
   border: none;
-  background-color: hotpink;
+  background-color: darkseagreen;
   color: white;
   padding: 5px;
   margin: 3px;
@@ -28,7 +28,8 @@ h4 {
   padding: 5px;
   margin: 3px;
   text-align: center;
-  color: goldenrod;
+  color: black;
+  font-size: 8px;
 }
 
 
