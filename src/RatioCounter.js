@@ -62,8 +62,7 @@ function RatioCounter() {
                 <form>
                     <input className={"inputRatio"} type={"text"} value={x} placeholder="type shorter value..." onChange={handleX}/>
                     <div className={"effectRatio"}>
-                        <h4>{isNaN(x) ? "Golden Fish understands only numbers ;)" : ""}
-                        </h4>
+                        <h4>{isNaN(x) ? "Golden Fish understands only numbers ;)" : ""}</h4>
                     </div>
 
                 </form>

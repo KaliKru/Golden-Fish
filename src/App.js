@@ -7,6 +7,8 @@ import Unit from "./Unit"
 import RatioCounter from "./RatioCounter";
 import Pallet from "./Pallet";
 import AddPallet from "./AddPallet";
+//import Test from "./Test";
+//import 'addPallet.css';
 
 
 
