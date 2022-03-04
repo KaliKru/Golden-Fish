@@ -1,4 +1,8 @@
 import React, {useState} from 'react';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+
+//const fishElem = <FontAwesomeIcon icon="fa-solid fa-fish"/>;
 
 function Unit(props) {
     const [selectUnit, setSelectUnit] = useState("");
