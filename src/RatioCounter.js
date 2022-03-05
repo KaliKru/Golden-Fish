@@ -4,21 +4,30 @@ import React, {useState, useEffect} from 'react';
 function RatioCounter() {
     const [x, setX] = useState("");
     const [y, setY] = useState("");
-    const [sizeX, setSizeX] = useState("100px");
-    const [sizeY, setSizeY] = useState("100px");
+
+    // const [sizeX, setSizeX] = useState("100px");
+    // const [sizeY, setSizeY] = useState("100px");
 
     const handleX = (event) => {
-        setX(event.target.value);
+        if(!isNaN(event.target.value)) {
+            setX(event.target.value);
+            setY((event.target.value * 1.6) + '')
+        }
     }
 
     const handleY = (event) => {
-        setY(event.target.value);
+        if(!isNaN(event.target.value)) {
+            setY(event.target.value);
+            setX((event.target.value / 1.6) + '');
+
+        }
+
     }
 
-    useEffect(() => {
-        console.log(resultX);
-        document.getElementById(sizeY).width = `${setSizeX}`;
-    }, [x]);
+    // useEffect(() => {
+    //     console.log(resultX);
+    //     document.getElementById(sizeY).width = `${setSizeX}`;
+    // }, [x]);
 
 /*
     const resultX = () => {
@@ -26,9 +35,9 @@ function RatioCounter() {
     }
 
  */
-    const resultX = () => {
-        setSizeX(() => +x * 1.6);
-    }
+    // const resultX = () => {
+    //     setSizeX(() => +x * 1.6);
+    // }
 //zeruję sizeX, a pierwotny wymiar 100px wynika z tego że chcę pokazać użytkownikowi od początku jakiś kwadrat.
 // //Po wyzerowaniu równanie wg wzoru złotego podziału
 /*
@@ -38,10 +47,11 @@ function RatioCounter() {
 
 
  */
-    const resultY = () => {
-        setSizeY( () => +y / 1.6);
-    }
+    // const resultY = () => {
+    //     setSizeY( () => +y / 1.6);
+    // }
 
+    /*
    const funCount = () => {
         if (x >= 1) {
             return (
@@ -54,6 +64,22 @@ function RatioCounter() {
         }
     }
 
+
+     */
+
+    // const funCount = () => {
+    //     setX (prev => {
+    //         if (x >= 1) {
+    //             return (
+    //                 <div id={sizeY} style={"width: `${x}`" && "height: `${x}` * 1.6"}/>
+    //             )
+    //         } else if (y >= 1) {
+    //             return (
+    //                 <div id={sizeY} style={"width: `${y}`/ 1.6" && "height: `${y}`"}/>
+    //             )
+    //         }
+    // })
+    // }
 
 
     return (
@@ -79,16 +105,16 @@ function RatioCounter() {
 
 
             <div className={"resultBox"}>
-                <div id={sizeY} onChange={funCount} style={{
-                    width: +x ? +x * 1.6 : sizeX,
-                    height: +y ? +y / 1.6 : sizeY,
+                <div  style={{
+                    width: y + 'px',
+                    height: x + 'px',
                     backgroundColor: "darkslateblue",
                     borderRadius: "3px",
                     color: "white",
                     textAlign: "center",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center"}}>longer: {+x * 1.6}px shorter:{+x}px
+                    justifyContent: "center"}}>longer: {y}px shorter:{x}px
                     </div>
             </div>
 

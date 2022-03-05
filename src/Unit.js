@@ -20,7 +20,7 @@ function Unit(props) {
                 <select value={selectUnit} onChange={handleSelect}>
                     <option value="">Select unit</option>
                     <option value={"let's count in pixel"}>px</option>
-                    <option value={"let's count in milimeter"}>mm</option>
+                    <option value={"let's count in mm"}>mm</option>
                 </select>
             </div>
         </div>
