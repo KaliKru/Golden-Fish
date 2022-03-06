@@ -3,20 +3,17 @@ import './addPallet.css';
 import { FaTrash } from 'react-icons/fa';
 
 
-function AddPallet() {
+function AddPallet(props) {
     const [pallet, setPallet] = useState([]);
-    const [color, setColor] = useState([]);
-    const [rgb, setRgb] = useState([]);
+    const [color, setColor] = useState("");
 
 
-    const addColor = () => {
+
+    const addColor = (event) => {
+        event.preventDefault();
         setPallet(prev => [...prev, color])
-        console.log(color)
-    }
-
-    const personalize = {
-        name: color
-    }
+        console.log([color, ...pallet]);
+    };
 
     window.localStorage.setItem('name', '{color}');
 
@@ -27,9 +24,6 @@ function AddPallet() {
     }
 
 
-    const handleRGB = (rgb) => {
-        setRgb(rgb)
-    }
 
 
     const inputColor = (color) => {
@@ -41,8 +35,10 @@ function AddPallet() {
         <div>
             <div className={"stylePallet"}>
                 <div className={"styleRatio"}>Your pallets</div>
-                <input type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
-                <button className={"styleAddColor-btn"} onClick={addColor}>add this color</button>
+                <form key={color.id} className={"form-pallet"} onSubmit={handleColor}>
+                    <input key={color.id} type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
+                    <button className={"styleAddColor-btn"} onClick={addColor}>add this color</button>
+                </form>
                 <div className={"style-pallet"}>
                     {pallet.map(color => <div className={"color-box"} style={{
                             width: 50,
@@ -63,14 +59,7 @@ function AddPallet() {
                 <br/>
                 <br/>
 
-                <form>
-                    <div style={{backgroundColor: "lightgray"}}>
-                        <input placeholder="type RGB number" onChange={handleRGB} onSubmit={() => handleRGB('rgb')}/>
 
-                        <h5 >{isNaN(color) ? "num only" : "HEX:"}<input onChange={handleColor}/></h5>
-                    </div>
-
-                </form>
             </div>
 
         </div>
@@ -78,6 +67,31 @@ function AddPallet() {
 }
 
 export default AddPallet;
+
+/*
+
+rgb
+<form>
+                    <div style={{backgroundColor: "lightgray"}}>
+                        <input placeholder="type RGB number" onChange={handleRGB} onSubmit={() => handleRGB('rgb')}/>
+
+                        <h5 >{isNaN(color) ? "num only" : "HEX:"}<input onChange={handleColor}/></h5>
+                    </div>
+
+                </form>
+
+
+
+props:
+
+props.onSubmit({
+            id: Math.floor(Math.random() * 10000),
+            text: color
+        });
+        setColor("");
+
+
+ */
 
 
 // rgb
