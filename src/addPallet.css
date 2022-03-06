@@ -10,3 +10,25 @@
 .styleAddColor-btn {
     cursor: pointer;
 }
+
+.icon-trash {
+    cursor: pointer;
+    color: goldenrod;
+}
+
+.color-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.7em;
+}
+
+.style-pallet {
+
+}
+
+p, .icon-trash {
+    margin: 2px;
+}

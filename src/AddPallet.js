@@ -43,13 +43,17 @@ function AddPallet() {
                 <div className={"styleRatio"}>Your pallets</div>
                 <input type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
                 <button className={"styleAddColor-btn"} onClick={addColor}>add this color</button>
-                {pallet.map(color => <div style={{
-                        width: 50,
-                        height: 50,
-                        backgroundColor: color,
-                    }} onChange={handleColor} onInput={() => inputColor('blue')}>{color}</div>
-                )}
-                <FaTrash className={"icon-trash"}> </FaTrash>
+                <div className={"style-pallet"}>
+                    {pallet.map(color => <div className={"color-box"} style={{
+                            width: 50,
+                            height: 50,
+                            backgroundColor: color,
+                        }} onChange={handleColor} onInput={() => inputColor('blue')}> <p>{color}</p>
+                        <FaTrash className={"icon-trash"}> </FaTrash>
+                    </div>
+                    )}
+                </div>
+
 
                 <br/>
                 <br/>
