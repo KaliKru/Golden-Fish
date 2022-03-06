@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { FaFish } from 'react-icons/fa';
 
 
 function RatioCounter() {
@@ -105,7 +106,29 @@ function RatioCounter() {
 
 
             <div className={"resultBox"}>
-                <div  style={{
+                <FaFish  style={{
+                    width: y + 'px',
+                    height: x + 'px',
+                    backgroundColor: "darkslateblue",
+                    borderRadius: "3px",
+                    color: "white",
+                    textAlign: "center",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"}}>longer: {y}px shorter:{x}px
+                    </FaFish>
+            </div>
+
+
+        </div>
+    );
+}
+
+
+/*
+// z divem a nie z Fishem:
+
+ <div  style={{
                     width: y + 'px',
                     height: x + 'px',
                     backgroundColor: "darkslateblue",
@@ -116,12 +139,12 @@ function RatioCounter() {
                     alignItems: "center",
                     justifyContent: "center"}}>longer: {y}px shorter:{x}px
                     </div>
-            </div>
+ */
 
 
-        </div>
-    );
-}
+
+
+
 
 /*
             {
