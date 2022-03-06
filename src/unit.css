@@ -22,6 +22,10 @@ select {
     color: wheat;
 }
 
+select:focus {
+    outline: none;
+}
+
 .fa-solid {
     color: red;
     width: 10px;

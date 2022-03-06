@@ -41,7 +41,7 @@ function AddPallet() {
             <div className={"stylePallet"}>
                 <div className={"styleRatio"}>Your pallets</div>
                 <input type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
-                <button onClick={addColor}>add this color</button>
+                <button className={"styleAddColor-btn"} onClick={addColor}>add this color</button>
                 {pallet.map(color => <div style={{
                         width: 50,
                         height: 50,

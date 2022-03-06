@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { FaFish } from 'react-icons/fa';
-
+//import { GiFlatfish } from 'react-icons/gi'
 
 function RatioCounter() {
     const [x, setX] = useState("");

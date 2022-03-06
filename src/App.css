@@ -20,6 +20,14 @@
   text-align: center;
 }
 
+.inputRatio:focus {
+  outline: none;
+}
+
+.inputRatio2:focus {
+  outline: none;
+}
+
 .effectRatio {
   display: flex;
 }

@@ -6,3 +6,7 @@
 .stylePallet {
     background-color: #ffffff;
 }
+
+.styleAddColor-btn {
+    cursor: pointer;
+}
