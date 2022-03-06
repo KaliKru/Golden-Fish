@@ -13,6 +13,14 @@ function AddPallet() {
         console.log(color)
     }
 
+    const personalize = {
+        name: color
+    }
+
+    window.localStorage.setItem('name', '{color}');
+
+
+
     const handleColor = (event) => {
         setColor(event.target.value)
     }
@@ -31,7 +39,7 @@ function AddPallet() {
     return (
         <div>
             <div className={"stylePallet"}>
-                <div className={"styleRatio"}>Your pallet</div>
+                <div className={"styleRatio"}>Your pallets</div>
                 <input type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
                 <button onClick={addColor}>add this color</button>
                 {pallet.map(color => <div style={{

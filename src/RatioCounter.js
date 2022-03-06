@@ -109,9 +109,10 @@ function RatioCounter() {
                 <FaFish  style={{
                     width: y + 'px',
                     height: x + 'px',
-                    backgroundColor: "darkslateblue",
+                    color: "darkslateblue",
                     borderRadius: "3px",
-                    color: "white",
+                    borderColor: "pink",
+                    border: '1px',
                     textAlign: "center",
                     display: "flex",
                     alignItems: "center",
