@@ -3,7 +3,7 @@ import './addPallet.css';
 
 
 function AddPallet() {
-    const [pallet, setPallet] = useState([""]);
+    const [pallet, setPallet] = useState([]);
     const [color, setColor] = useState([]);
     const [rgb, setRgb] = useState([]);
 
@@ -32,17 +32,24 @@ function AddPallet() {
         <div>
             <div className={"stylePallet"}>
                 <div className={"styleRatio"}>Your pallet</div>
-                <button onClick={addColor}>new color</button>
+                <input type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
+                <button onClick={addColor}>add this color</button>
                 {pallet.map(color => <div style={{
                         width: 50,
                         height: 50,
                         backgroundColor: color,
                     }} onChange={handleColor} onInput={() => inputColor('blue')}>{color}</div>
                 )}
-                <div>{color}</div>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
                 <form>
-                    <input type={"text"} value={color} placeholder="type color" onChange={handleColor}/>
                     <div style={{backgroundColor: "lightgray"}}>
                         <input placeholder="type RGB number" onChange={handleRGB} onSubmit={() => handleRGB('rgb')}/>
 
