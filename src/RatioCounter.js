@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { FaFish } from 'react-icons/fa';
 //import { GiFlatfish } from 'react-icons/gi'
+import Unit from "./Unit";
+//import AddPallet from "./AddPallet";
 
 function RatioCounter() {
     const [x, setX] = useState("");
@@ -85,6 +87,7 @@ function RatioCounter() {
 
     return (
         <div>
+            <Unit/>
             <div className={"styleRatio"}>
                 <form>
                     <input className={"inputRatio"} type={"text"} value={x} placeholder="type shorter value..." onChange={handleX}/>

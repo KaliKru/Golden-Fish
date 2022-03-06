@@ -1,3 +1,5 @@
+/*
+
 import React from 'react';
 import AddPallet from "./AddPallet";
 
@@ -10,3 +12,5 @@ function Pallet(pros) {
 }
 
 export default Pallet;
+
+ */
