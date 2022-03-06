@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './addPallet.css';
+import { FaTrash } from 'react-icons/fa';
 
 
 function AddPallet() {
@@ -48,6 +49,7 @@ function AddPallet() {
                         backgroundColor: color,
                     }} onChange={handleColor} onInput={() => inputColor('blue')}>{color}</div>
                 )}
+                <FaTrash className={"icon-trash"}> </FaTrash>
 
                 <br/>
                 <br/>
