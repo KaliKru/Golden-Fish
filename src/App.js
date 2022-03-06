@@ -9,6 +9,8 @@ import Pallet from "./Pallet";
 import AddPallet from "./AddPallet";
 //import Test from "./Test";
 //import 'addPallet.css';
+import './index.css';
+
 
 
 

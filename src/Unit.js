@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { FaFish } from 'react-icons/fa';
 
-//const fishElem = <FontAwesomeIcon icon="fa-solid fa-fish"/>;
 
 function Unit(props) {
     const [selectUnit, setSelectUnit] = useState("");
@@ -11,10 +11,10 @@ function Unit(props) {
     }
 
 
-
     return (
         <div>
             <div className={"styleUnit"}>
+                <FaFish size="4em" color="purple"/>
                 <div>Golden Fish knows the ratio!</div>
                 <p>{selectUnit}</p>
                 <select value={selectUnit} onChange={handleSelect}>

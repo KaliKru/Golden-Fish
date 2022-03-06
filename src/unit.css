@@ -21,3 +21,13 @@ select {
     cursor: pointer;
     color: wheat;
 }
+
+.fa-solid {
+    color: red;
+    width: 10px;
+}
+
+
+.icon-bar {
+    color: hotpink;
+}
