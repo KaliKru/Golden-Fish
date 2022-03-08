@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -13,10 +18,14 @@ body {
 
 }
 
+
+
 code {
   font-family: 'Barlow Condensed', sans-serif;
 
 }
+
+
 
 
 /*

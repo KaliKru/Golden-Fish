@@ -33,21 +33,23 @@ function AddPallet(props) {
 
     return (
         <div>
-            <div className={"stylePallet"}>
-                <div className={"styleRatio"}>Your pallets</div>
-                <form key={color.id} className={"form-pallet"} onSubmit={handleColor}>
-                    <input key={color.id} type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
-                    <button className={"styleAddColor-btn"} onClick={addColor}>add this color</button>
-                </form>
-                <div className={"style-pallet"}>
-                    {pallet.map(color => <div className={"color-box"} style={{
-                            width: 50,
-                            height: 50,
-                            backgroundColor: color,
-                        }} onChange={handleColor} onInput={() => inputColor('blue')}> <p>{color}</p>
-                        <FaTrash className={"icon-trash"}> </FaTrash>
+            <div className={"rainbow"}>
+                <div className={"rainbow"}>Your pallets</div>
+                <div className={"stylePallet"}>
+                    <form key={color.id} className={"form-pallet"} onSubmit={handleColor}>
+                        <input className={"styleAddColor-input"} key={color.id} type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>
+                        <button className={"styleAddColor-btn"} onClick={addColor}>add this color</button>
+                    </form>
+                    <div className={"style-pallet"}>
+                        {pallet.map(color => <div className={"color-box"} style={{
+                                width: 50,
+                                height: 50,
+                                backgroundColor: color,
+                            }} onChange={handleColor} onInput={() => inputColor('blue')}> <p>{color}</p>
+                            <FaTrash className={"icon-trash"}> </FaTrash>
+                        </div>
+                        )}
                     </div>
-                    )}
                 </div>
 
 

@@ -1,15 +1,69 @@
-
-.rainbow {
-    background-color: darkslategrey;
+@media only screen and (max-width: 600px) {
+    .stylePallet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .stylePallet {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
-.stylePallet {
-    background-color: #ffffff;
+.inputRatio, .inputRatio2 {
+    border-radius: 5px;
+    border: none;
+    background-color: darkseagreen;
+    color: white;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+}
+
+.rainbow {
+    margin: 4vh auto;
+    color: darkslategrey;
+}
+
+
+.stylePallet, .rainbow {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.styleAddColor-input {
+    border-radius: 5px;
+    border: none;
+    background-color: darkseagreen;
+    color: white;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
 }
 
 .styleAddColor-btn {
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    margin: 5px;
     cursor: pointer;
+    color: wheat;
 }
+
+.styleAddColor-btn:focus {
+    outline: none;
+}
+
+.styleAddColor-input:focus {
+    outline: none;
+}
+
 
 .icon-trash {
     cursor: pointer;
