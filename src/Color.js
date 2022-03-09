@@ -18,7 +18,6 @@ function Color({ id, name, hex, rgb, cmyk, removeColor }) {
                 <h2>{cmyk}</h2>
                 <button onClick={() => removeColor(id)}>Delete</button>
             </li>
-            <AddColor nameVal={name}/>
         </>
     );
 }

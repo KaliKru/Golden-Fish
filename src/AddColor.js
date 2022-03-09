@@ -1,11 +1,9 @@
 
 import React, {useState} from 'react';
-const URL = "http://localhost:3000/db";
+const URL = "http://localhost:3000/colors";
 
 
-
-
-function AddColor({ fetchColors, nameVal, idVal}) {
+function AddColor({ fetchColors, nameVal, id}) {
 
     const [name, setName] = useState("");
     const [hex, setHex] = useState("");
@@ -14,7 +12,7 @@ function AddColor({ fetchColors, nameVal, idVal}) {
 
     const saveColor = (event) => {
         event.preventDefault();
-        fetch(URL + (idVal ? `/${idVal}` : ''), {
+        fetch(URL, {
             method: "POST",
             body: JSON.stringify({
                 name,

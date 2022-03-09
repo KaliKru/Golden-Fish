@@ -20,7 +20,9 @@ function AddPallet(props) {
 
 
     const handleColor = (event) => {
+        event.preventDefault();
         setColor(event.target.value)
+        fetch()
     }
 
 

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import AddColor from "./AddColor";
 import Color from "./Color";
 
-const URL = "http://localhost:3001/";
+const URL = "http://localhost:3000/colors";
 
 function ColorsManager() {
     const [colors, setColors] = useState([]);
