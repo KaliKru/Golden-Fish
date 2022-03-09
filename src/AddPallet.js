@@ -34,7 +34,7 @@ function AddPallet(props) {
     return (
         <div>
             <div className={"rainbow"}>
-                <div className={"rainbow"}>Your pallets</div>
+                <div className={"rainbow1"}>Your pallets</div>
                 <div className={"stylePallet"}>
                     <form key={color.id} className={"form-pallet"} onSubmit={handleColor}>
                         <input className={"styleAddColor-input"} key={color.id} type={"text"} value={color} placeholder="type color name" onChange={handleColor}/>

@@ -21,9 +21,15 @@
     text-align: center;
 }
 
-.rainbow {
-    margin: 4vh auto;
-    color: darkslategrey;
+.rainbow1 {
+    margin: 0 auto;
+    color: wheat;
+    background-color: purple;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 2em;
 }
 
 
@@ -50,8 +56,8 @@
     background-color: darkgoldenrod;
     border-radius: 5px;
     border: none;
-    padding: 3px;
-    margin: 5px;
+    padding: 5px;
+    margin: 3px;
     cursor: pointer;
     color: wheat;
 }
