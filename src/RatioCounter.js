@@ -8,81 +8,24 @@ function RatioCounter() {
     const [x, setX] = useState("");
     const [y, setY] = useState("");
 
-    // const [sizeX, setSizeX] = useState("100px");
-    // const [sizeY, setSizeY] = useState("100px");
 
     const handleX = (event) => {
         if(!isNaN(event.target.value)) {
             setX(event.target.value);
-            setY((event.target.value * 1.6) + '')
+            setY((Math.round(event.target.value * 1.6)) + '')
         }
     }
 
     const handleY = (event) => {
         if(!isNaN(event.target.value)) {
             setY(event.target.value);
-            setX((event.target.value / 1.6) + '');
+            setX((Math.round(event.target.value / 1.6)) + '');
 
         }
 
     }
 
-    // useEffect(() => {
-    //     console.log(resultX);
-    //     document.getElementById(sizeY).width = `${setSizeX}`;
-    // }, [x]);
 
-/*
-    const resultX = () => {
-        setSizeX(prev => ((prev - 100) + (+x * 1.6)));
-    }
-
- */
-    // const resultX = () => {
-    //     setSizeX(() => +x * 1.6);
-    // }
-//zeruję sizeX, a pierwotny wymiar 100px wynika z tego że chcę pokazać użytkownikowi od początku jakiś kwadrat.
-// //Po wyzerowaniu równanie wg wzoru złotego podziału
-/*
-    const resultY = () => {
-        setSizeY( prev => ((prev - 100) + (+y / 1.6)));
-    }
-
-
- */
-    // const resultY = () => {
-    //     setSizeY( () => +y / 1.6);
-    // }
-
-    /*
-   const funCount = () => {
-        if (x >= 1) {
-            return (
-                <div id={sizeY} style={"width: `${x}`" && "height: `${x}` * 1.6"}/>
-            )
-        } else if (y >= 1) {
-            return (
-                <div id={sizeY} style={"width: `${y}`/ 1.6" && "height: `${y}`"}/>
-            )
-        }
-    }
-
-
-     */
-
-    // const funCount = () => {
-    //     setX (prev => {
-    //         if (x >= 1) {
-    //             return (
-    //                 <div id={sizeY} style={"width: `${x}`" && "height: `${x}` * 1.6"}/>
-    //             )
-    //         } else if (y >= 1) {
-    //             return (
-    //                 <div id={sizeY} style={"width: `${y}`/ 1.6" && "height: `${y}`"}/>
-    //             )
-    //         }
-    // })
-    // }
 
 
     return (
@@ -127,6 +70,71 @@ function RatioCounter() {
         </div>
     );
 }
+
+
+
+/*
+
+    // useEffect(() => {
+    //     console.log(resultX);
+    //     document.getElementById(sizeY).width = `${setSizeX}`;
+    // }, [x]);
+
+/*
+    const resultX = () => {
+        setSizeX(prev => ((prev - 100) + (+x * 1.6)));
+    }
+
+ */
+// const resultX = () => {
+//     setSizeX(() => +x * 1.6);
+// }
+//zeruję sizeX, a pierwotny wymiar 100px wynika z tego że chcę pokazać użytkownikowi od początku jakiś kwadrat.
+// //Po wyzerowaniu równanie wg wzoru złotego podziału
+/*
+    const resultY = () => {
+        setSizeY( prev => ((prev - 100) + (+y / 1.6)));
+    }
+
+
+ */
+// const resultY = () => {
+//     setSizeY( () => +y / 1.6);
+// }
+
+/*
+const funCount = () => {
+    if (x >= 1) {
+        return (
+            <div id={sizeY} style={"width: `${x}`" && "height: `${x}` * 1.6"}/>
+        )
+    } else if (y >= 1) {
+        return (
+            <div id={sizeY} style={"width: `${y}`/ 1.6" && "height: `${y}`"}/>
+        )
+    }
+}
+
+
+ */
+
+/*
+// const funCount = () => {
+//     setX (prev => {
+//         if (x >= 1) {
+//             return (
+//                 <div id={sizeY} style={"width: `${x}`" && "height: `${x}` * 1.6"}/>
+//             )
+//         } else if (y >= 1) {
+//             return (
+//                 <div id={sizeY} style={"width: `${y}`/ 1.6" && "height: `${y}`"}/>
+//             )
+//         }
+// })
+// }
+
+*/
+
 
 
 /*

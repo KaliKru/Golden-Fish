@@ -38,7 +38,7 @@ function AddColor({ fetchColors, nameVal, id}) {
     }
 
     return (
-        <form onSubmit={saveColor}>
+        <form className={"style-color"} onSubmit={saveColor}>
             <input type="text" placeholder="type name" value={name} onChange={e => setName(e.target.value)}/>
             <input type="text" placeholder="type hex" value={hex} onChange={e => setHex(e.target.value)}/>
             <input type="text" placeholder="type rgb" value={rgb} onChange={e => setRgb(e.target.value)}/>

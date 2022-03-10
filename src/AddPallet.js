@@ -25,9 +25,6 @@ function AddPallet(props) {
         fetch()
     }
 
-
-
-
     const inputColor = (color) => {
         setColor(color);
     }

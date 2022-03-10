@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import AddColor from "./AddColor";
 import Color from "./Color";
 
+
 const URL = "http://localhost:3000/colors";
 
 function ColorsManager() {
@@ -40,7 +41,7 @@ function ColorsManager() {
                 <AddColor fetchColors={getColors}/>
                 <ul>
                     {colors.length === 0
-                        ? <p>LOADING...</p>
+                        ? <p></p>
                         : colors.map(color => <Color key={color.id} id={color.id} name={color.name} hex={color.hex}
                                                      rgb={color.rgb} cmyk={color.cmyk} removeColor={removeColor}/>)
                     }

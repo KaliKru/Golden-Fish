@@ -1,11 +1,18 @@
 {
   "colors": [
     {
-      "name": "9oujyg",
-      "hex": "iujyhf",
-      "rgb": "ikujyhf",
-      "cmyk": "iujyhtf",
+      "name": "maine",
+      "hex": "#ff4857",
+      "rgb": "cos",
+      "cmyk": "cos",
       "id": 1
+    },
+    {
+      "name": "",
+      "hex": "#ff4857",
+      "rgb": "cos",
+      "cmyk": "cos",
+      "id": 2
     }
   ]
 }
