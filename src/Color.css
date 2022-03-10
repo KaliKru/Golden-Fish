@@ -18,8 +18,20 @@
     background-color: goldenrod;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
+
+.style-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.7em;
+    justify-content: space-between;
+
+
+}
+
 
 
 input {
@@ -36,6 +48,10 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: wheat;
+    width: 100vw;
+    height: 50px;
+
 }
 
 input:focus {
@@ -59,18 +75,25 @@ button {
 .icon-trash {
     color: purple;
     font-size: 0.9em;
-
-
 }
 
-.style-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7em;
+.icon-trash:hover {
+    color: mediumpurple;
 }
+button:hover {
+    background-color: rebeccapurple;
+}
+
+
 
 h2 {
-    margin: auto 10px;
+    margin: auto 3em;
+    border-radius: 5px;
+    border: none;
+    background-color: rosybrown;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    min-width: 50px;
+    height: 20px;
 }

@@ -13,6 +13,34 @@
       "rgb": "cos",
       "cmyk": "cos",
       "id": 2
+    },
+    {
+      "name": "ddis",
+      "hex": "#ffffff",
+      "rgb": "djdj",
+      "cmyk": "dd",
+      "id": 3
+    },
+    {
+      "name": "sss",
+      "hex": "",
+      "rgb": "",
+      "cmyk": "",
+      "id": 4
+    },
+    {
+      "name": "red",
+      "hex": "#ff3456",
+      "rgb": "nie wiem",
+      "cmyk": "CMYK",
+      "id": 5
+    },
+    {
+      "name": "red",
+      "hex": "#ff3456",
+      "rgb": "nie wiem jaki",
+      "cmyk": "CMYK",
+      "id": 6
     }
   ]
 }
