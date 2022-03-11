@@ -31,11 +31,6 @@ function RatioCounter() {
 
     }
 
-
-
-
-
-
     return (
         <div>
             <Unit/>
@@ -45,7 +40,6 @@ function RatioCounter() {
                     <div className={"effectRatio"}>
                         <h4>{isNaN(x) ? "Golden Fish understands only numbers ;)" : ""}</h4>
                     </div>
-
                 </form>
 
                 <form>
