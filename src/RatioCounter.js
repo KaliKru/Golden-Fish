@@ -28,6 +28,8 @@ function RatioCounter() {
 
 
 
+
+
     return (
         <div>
             <Unit/>
@@ -52,7 +54,7 @@ function RatioCounter() {
 
 
             <div className={"resultBox"}>
-                <FaFish  style={{
+                <FaFish style={{
                     width: y + 'px',
                     height: x + 'px',
                     color: "darkslateblue",

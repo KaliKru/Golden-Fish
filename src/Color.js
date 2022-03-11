@@ -10,6 +10,8 @@ const data = {
     hex: "test hex"
 };
 
+
+
 function Color({ id, name, hex, rgb, cmyk, removeColor }) {
     return (
         <>

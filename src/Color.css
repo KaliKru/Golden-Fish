@@ -12,9 +12,16 @@
 }
 
 
+@media (max-width: 600px) {
+    h2 {
+        display: none;
+    }
+}
+
+
 .style-color {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     background-color: goldenrod;
     display: flex;
     align-items: center;
@@ -26,10 +33,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 0.7em;
+    font-size: 0.6em;
     justify-content: space-between;
-
-
+    background-color: rosybrown;
+    border-radius: 5px;
+    box-shadow: 5px 6px 6px -6px rebeccapurple;
 }
 
 
@@ -42,6 +50,7 @@ input {
     padding: 5px;
     margin: 3px;
     text-align: center;
+    box-shadow: 5px 6px 6px -8px darkolivegreen;
 }
 
 ul {
@@ -50,7 +59,7 @@ ul {
     padding: 0;
     background-color: wheat;
     width: 100vw;
-    height: 50px;
+    min-height: 50px;
 
 }
 
@@ -70,11 +79,13 @@ button {
     margin: 3px;
     cursor: pointer;
     color: wheat;
+    box-shadow: 5px 8px 6px -6px goldenrod;
 }
 
 .icon-trash {
     color: purple;
     font-size: 0.9em;
+    padding-right: 15px;
 }
 
 .icon-trash:hover {
@@ -94,6 +105,6 @@ h2 {
     color: white;
     padding: 5px;
     text-align: center;
-    min-width: 50px;
+    width: 67px;
     height: 20px;
 }

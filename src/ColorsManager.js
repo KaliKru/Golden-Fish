@@ -38,6 +38,7 @@ function ColorsManager() {
 
         return (
             <div>
+                <div className={"rainbow1"}>Your pallets</div>
                 <AddColor fetchColors={getColors}/>
                 <ul>
                     {colors.length === 0

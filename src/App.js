@@ -20,7 +20,6 @@ const App = () => {
   return (
       <>
         <RatioCounter/>
-          <AddPallet/>
           <ColorsManager/>
       </>
   )

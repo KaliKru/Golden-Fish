@@ -1,46 +1,60 @@
 {
   "colors": [
     {
-      "name": "maine",
-      "hex": "#ff4857",
-      "rgb": "cos",
-      "cmyk": "cos",
-      "id": 1
-    },
-    {
-      "name": "",
-      "hex": "#ff4857",
-      "rgb": "cos",
-      "cmyk": "cos",
-      "id": 2
-    },
-    {
-      "name": "ddis",
-      "hex": "#ffffff",
-      "rgb": "djdj",
-      "cmyk": "dd",
+      "name": "main",
+      "hex": "#fe5678",
+      "rgb": "no",
+      "cmyk": "no",
       "id": 3
     },
     {
-      "name": "sss",
-      "hex": "",
-      "rgb": "",
-      "cmyk": "",
+      "name": "main",
+      "hex": "#fd5678",
+      "rgb": "no",
+      "cmyk": "no",
       "id": 4
     },
     {
-      "name": "red",
-      "hex": "#ff3456",
-      "rgb": "nie wiem",
-      "cmyk": "CMYK",
+      "name": "blue",
+      "hex": "#ae4455",
+      "rgb": "n",
+      "cmyk": "n",
       "id": 5
     },
     {
-      "name": "red",
-      "hex": "#ff3456",
-      "rgb": "nie wiem jaki",
-      "cmyk": "CMYK",
+      "name": "blue",
+      "hex": "#ba4455",
+      "rgb": "n",
+      "cmyk": "n",
       "id": 6
+    },
+    {
+      "name": "blue",
+      "hex": "#cg4455",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 7
+    },
+    {
+      "name": "blue",
+      "hex": "#ed4455",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 8
+    },
+    {
+      "name": "blue",
+      "hex": "#44e55d",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 9
+    },
+    {
+      "name": "bg",
+      "hex": "#567e32",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 10
     }
   ]
 }
