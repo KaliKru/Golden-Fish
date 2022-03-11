@@ -3,6 +3,12 @@ import { FaFish } from 'react-icons/fa';
 //import { GiFlatfish } from 'react-icons/gi'
 import Unit from "./Unit";
 //import AddPallet from "./AddPallet";
+import './index.css';
+import "./ColorsManager";
+import './App.css';
+import './unit.css';
+import './resultBox.css';
+
 
 function RatioCounter() {
     const [x, setX] = useState("");

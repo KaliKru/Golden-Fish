@@ -55,6 +55,118 @@
       "rgb": "n",
       "cmyk": "n",
       "id": 10
+    },
+    {
+      "name": "main",
+      "hex": "#4563ef",
+      "rgb": "nnnnnnnn",
+      "cmyk": "nnnnnn",
+      "id": 11
+    },
+    {
+      "name": "any",
+      "hex": "#78e451",
+      "rgb": "no",
+      "cmyk": "no",
+      "id": 12
+    },
+    {
+      "name": "",
+      "hex": "#78e451",
+      "rgb": "no",
+      "cmyk": "no",
+      "id": 13
+    },
+    {
+      "name": "",
+      "hex": "",
+      "rgb": "no",
+      "cmyk": "no",
+      "id": 14
+    },
+    {
+      "name": "",
+      "hex": "",
+      "rgb": "no",
+      "cmyk": "no",
+      "id": 15
+    },
+    {
+      "name": "new",
+      "hex": "#dd3456",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 16
+    },
+    {
+      "name": "new",
+      "hex": "#dd3456",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 17
+    },
+    {
+      "name": "new",
+      "hex": "#dd3456",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 18
+    },
+    {
+      "name": "",
+      "hex": "#dd3456",
+      "rgb": "n",
+      "cmyk": "n",
+      "id": 19
+    },
+    {
+      "name": "",
+      "hex": "",
+      "rgb": "",
+      "cmyk": "",
+      "id": 20
+    },
+    {
+      "name": "jjsj",
+      "hex": "#ff4455",
+      "rgb": "ccc",
+      "cmyk": "eee",
+      "id": 21
+    },
+    {
+      "name": "",
+      "hex": "#ff4455",
+      "rgb": "ccc",
+      "cmyk": "eee",
+      "id": 22
+    },
+    {
+      "name": "",
+      "hex": "#ff4455",
+      "rgb": "ccc",
+      "cmyk": "eee",
+      "id": 23
+    },
+    {
+      "name": "",
+      "hex": "#ff4455",
+      "rgb": "ccc",
+      "cmyk": "eee",
+      "id": 24
+    },
+    {
+      "name": "jsjsj",
+      "hex": "jsjs",
+      "rgb": "jdjjd",
+      "cmyk": "jdjd",
+      "id": 25
+    },
+    {
+      "name": "jsjsj",
+      "hex": "jsjs",
+      "rgb": "jdjjd",
+      "cmyk": "jdjd",
+      "id": 26
     }
   ]
 }
