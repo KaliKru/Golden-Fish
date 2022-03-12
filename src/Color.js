@@ -3,14 +3,6 @@ import AddColor from "./AddColor";
 import "./Color.css";
 import { FaTrash } from 'react-icons/fa';
 
-const API = "http://localhost:3000";
-
-const data = {
-    name: "test Name",
-    hex: "test hex"
-};
-
-
 
 function Color({ id, name, hex, rgb, cmyk, removeColor }) {
     return (
@@ -36,9 +28,3 @@ function Color({ id, name, hex, rgb, cmyk, removeColor }) {
 }
 
 export default Color;
-
-
-/*
-
-<button className={"color-btn"} onClick={() => removeColor(id)}>Delete</button>
- */
